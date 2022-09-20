@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Leonlav77\\Frejmcore\\": ""
+            "Leonlav77\\Frejmcore\\": "src/"
         }
     },
     "authors": [
