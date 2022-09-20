@@ -1,0 +1,18 @@
+{
+    "name": "leonlav77/frejmcore",
+    "description": "This is the core package for the Frejm project",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Leonlav77\\Frejmcore\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Leon",
+            "email": "leonlav77@gmail.com"
+        }
+    ],
+    "require": {}
+}
