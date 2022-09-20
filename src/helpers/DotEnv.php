@@ -1,6 +1,6 @@
 <?php
 
-namespace helpers;
+namespace Leonlav77\Frejmcore\helpers;
 
 class DotEnv
 {

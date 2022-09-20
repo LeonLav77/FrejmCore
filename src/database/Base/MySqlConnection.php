@@ -1,9 +1,9 @@
 <?php
 
-namespace database\Base;
+namespace Leonlav77\Frejmcore\database\Base;
 
 use mysqli;
-use database\Base\ConnectionInterface;
+use Leonlav77\Frejmcore\database\Base\ConnectionInterface;
 
 class MySqlConnection implements ConnectionInterface {
     public $connection;

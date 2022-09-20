@@ -1,9 +1,10 @@
 <?php
 
-namespace Base;
+namespace Leonlav77\Frejmcore\App\Base;
 
-use Traits\HasEloquent;
-use database\base\ConnectionInterface;
+
+use Leonlav77\Frejmcore\Traits\HasEloquent;
+use Leonlav77\Frejmcore\database\Base\ConnectionInterface;
 
 abstract class Model extends HasEloquent {
 

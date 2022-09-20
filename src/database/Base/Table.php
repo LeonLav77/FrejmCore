@@ -3,7 +3,8 @@
 namespace database\Base;
 
 use Closure;
-use database\Base\MySqlConnection;
+use Leonlav77\Frejmcore\database\Base\Blueprint;
+use Leonlav77\Frejmcore\database\Base\MySqlConnection;
 
 class Table
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace helpers;
+namespace Leonlav77\Frejmcore\helpers;
 
 class MySqli {
     public static function standardizeOutput($query){

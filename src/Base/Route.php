@@ -1,6 +1,6 @@
 <?php
 
-namespace Base;
+namespace Leonlav77\Frejmcore\App\Base;
 
 class Route{
     public $uri;

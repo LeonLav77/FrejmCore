@@ -1,6 +1,6 @@
 <?php
 
-namespace database\base;
+namespace Leonlav77\Frejmcore\database\Base;
 
 interface ConnectionInterface {
     public function connect();

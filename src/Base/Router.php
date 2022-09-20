@@ -1,9 +1,9 @@
 <?php
 
-namespace Base;
+namespace Leonlav77\Frejmcore\App\Base;
 
 use routes\Routes;
-use Base\Response;
+use Leonlav77\Frejmcore\App\Base\Response;
 
 class Router {
     public $routes = [];

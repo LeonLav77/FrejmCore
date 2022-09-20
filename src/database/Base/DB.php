@@ -1,8 +1,8 @@
 <?php
 
-namespace database\Base;
+namespace Leonlav77\Frejmcore\database\Base;
 
-use Traits\HasEloquent;
+use Leonlav77\Frejmcore\Traits\HasEloquent;
 
 final class DB extends HasEloquent {
     

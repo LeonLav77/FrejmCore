@@ -1,6 +1,6 @@
 <?php
 
-namespace Traits;
+namespace Leonlav77\Frejmcore\Traits;
 
 use Base\Model;
 use database\Base\QueryExcecutor;

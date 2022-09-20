@@ -1,8 +1,8 @@
 <?php
 
-namespace console;
+namespace Leonlav77\Frejmcore\console;
 
-use console\MakeFile;
+use Leonlav77\Frejmcore\console\MakeFile;
 
 class Command {
     public $command;

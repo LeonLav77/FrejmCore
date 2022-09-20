@@ -1,6 +1,6 @@
 <?php
 
-namespace console;
+namespace Leonlav77\Frejmcore\console;
 
 class MakeFile {
     public static function controller($name){

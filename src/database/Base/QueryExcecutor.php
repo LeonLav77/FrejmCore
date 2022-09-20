@@ -2,8 +2,9 @@
 namespace database\Base;
 
 use stdClass;
-use App\Base\Model;
-use database\base\ConnectionInterface;
+use Leonlav77\Frejmcore\App\Base\Model;
+use Leonlav77\Frejmcore\helpers\MySqli;
+namespace Leonlav77\Frejmcore\database\Base;
 
 class QueryExcecutor{
     public static $conn;
@@ -17,7 +18,7 @@ class QueryExcecutor{
         if(gettype($output) == 'boolean'){
             return $output;
         }
-        $result = \helpers\MySqli::standardizeOutput($output);
+        $result = MySqli::standardizeOutput($output);
         $result = self::convertToModel($result, $model);
         return $result;
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace database\Base;
+namespace Leonlav77\Frejmcore\database\Base;
 
 class Blueprint {
     public $table;
