@@ -1,6 +1,6 @@
 <?php
 
-namespace Leonlav77\Frejmcore\App\Base;
+namespace Leonlav77\Frejmcore\Base;
 
 abstract class Migration {
     public function __invoke() {

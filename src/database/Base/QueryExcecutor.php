@@ -2,7 +2,7 @@
 namespace database\Base;
 
 use stdClass;
-use Leonlav77\Frejmcore\App\Base\Model;
+use Leonlav77\Frejmcore\Base\Model;
 use Leonlav77\Frejmcore\helpers\MySqli;
 namespace Leonlav77\Frejmcore\database\Base;
 

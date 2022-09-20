@@ -1,6 +1,6 @@
 <?php
 
-namespace Leonlav77\Frejmcore\App\Base;
+namespace Leonlav77\Frejmcore\Base;
 
 
 use Leonlav77\Frejmcore\Traits\HasEloquent;
