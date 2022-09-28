@@ -1,5 +1,5 @@
 <?php
-namespace database\Base;
+namespace Leonlav77\Frejmcore\database\Base;
 
 use stdClass;
 use Leonlav77\Frejmcore\Base\Model;
