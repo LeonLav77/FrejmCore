@@ -2,8 +2,8 @@
 
 namespace Leonlav77\Frejmcore\Traits;
 
-use Base\Model;
-use database\Base\QueryExcecutor;
+use Leonlav77\Frejmcore\Base\Model;
+use Leonlav77\Frejmcore\database\Base\QueryExcecutor;
 
 abstract class HasEloquent {
     public static $DBTable;
