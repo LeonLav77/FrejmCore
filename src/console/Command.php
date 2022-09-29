@@ -74,7 +74,7 @@ class Command {
     public function make($arg = null){
         if($arg == null || !in_array($arg, $this->makeable_classes) || !isset($this->args[0])){	
             echo "This is make command. It will make new file. Don't forget the name of the file\n";
-            echo "Available args: controller, model, migration, route\n";
+            echo "Available args: controller, model, migration, middleware\n";
             return;
         }
         MakeFile::$arg($this->args[0]);
