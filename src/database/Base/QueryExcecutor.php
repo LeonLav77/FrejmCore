@@ -3,7 +3,7 @@ namespace Leonlav77\Frejmcore\database\Base;
 
 use stdClass;
 use Leonlav77\Frejmcore\Base\Model;
-use Leonlav77\Frejmcore\helpers\MySqli;
+use Leonlav77\Frejmcore\database\Base\MySqli;
 namespace Leonlav77\Frejmcore\database\Base;
 
 class QueryExcecutor{

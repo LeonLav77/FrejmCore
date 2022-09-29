@@ -1,6 +1,6 @@
 <?php
 
-namespace Leonlav77\Frejmcore\helpers;
+namespace Leonlav77\Frejmcore\database\Base;
 
 class MySqli {
     public static function standardizeOutput($query){
