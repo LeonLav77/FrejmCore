@@ -19,7 +19,7 @@ class MySqlConnection implements ConnectionInterface {
                 getenv('DB_DATABASE')
             );
         } catch (\Exception $e) {
-            echo $e->getMessage();
+            echo $e->getMessage() . PHP_EOL;
         }
     }
     public function query($query) {

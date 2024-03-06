@@ -55,8 +55,16 @@ class Command {
     }
 
     public function help($arg = null){
-        echo "This is help command. It will show you all available commands.\n";
+        echo "Available commands:\n
+        - make:controller [name] - create new controller\n
+        - make:model [name] - create new model\n
+        - make:migration [name] - create new migration\n
+        - make:middleware [name] - create new middleware\n
+        - migrate - run all migrations\n
+        - help - show this message\n
+        - serve - start the server\n";
     }
+
     public function migrate($arg = null){
         $migrations = scandir(baseDir() . "\database\migrations");
         $migrations = array_filter($migrations, function($migration){
@@ -78,5 +86,10 @@ class Command {
             return;
         }
         MakeFile::$arg($this->args[0]);
+    }
+
+    public function serve($arg = null){
+        echo "Server started at http://localhost:8000\n";
+        exec("php -S localhost:8000 -t public");
     }
 }
