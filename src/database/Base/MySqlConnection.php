@@ -11,12 +11,16 @@ class MySqlConnection implements ConnectionInterface {
         $this->connect();
     }
     public function connect() {
-        $this->connection = new mysqli(
-            getenv('DB_HOST'),
-            getenv('DB_USERNAME'),
-            getenv('DB_PASSWORD'),
-            getenv('DB_DATABASE')
-        );
+        try {
+            $this->connection = new mysqli(
+                getenv('DB_HOST'),
+                getenv('DB_USERNAME'),
+                getenv('DB_PASSWORD'),
+                getenv('DB_DATABASE')
+            );
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+        }
     }
     public function query($query) {
         return $this->connection->query($query);
