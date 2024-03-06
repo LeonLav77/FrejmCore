@@ -12,8 +12,15 @@ class Request {
 
     public function __construct(){
         $this->fullUri = $_SERVER['REQUEST_URI'];
-        $this->uri = '/'.explode('/', $this->fullUri)[3] ?? '/';
-
+        if($this->fullUri[strlen($this->fullUri) - 1] == '/'){
+            $this->fullUri = substr($this->fullUri, 0, -1);
+        }
+        if($this->fullUri){
+            $this->uri = '/'.explode('/', $this->fullUri)[1];
+        }else{
+            $this->uri = '/';
+        }
+        
         $this->method = $_SERVER['REQUEST_METHOD'];
         $this->params = $_REQUEST;
         $this->server = $_SERVER;

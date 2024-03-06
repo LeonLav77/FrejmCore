@@ -73,9 +73,15 @@ class Command {
         $migrations = array_map(function($migration){
             return "database\\migrations\\" . str_replace(".php", "", $migration);
         }, $migrations);
-        foreach($migrations as $migration){
-            $migration = new $migration;
-            $migration();
+
+        try {
+            foreach($migrations as $migration){
+                require_once baseDir() . str_replace("\\", "\\", $migration) . ".php";
+                $migration = new $migration;
+                // $migration->up();
+            }
+        } catch (\Throwable $th) {
+            echo "Error: " . $th->getMessage() . ". \n";
         }
         echo "Migrated";
     }
