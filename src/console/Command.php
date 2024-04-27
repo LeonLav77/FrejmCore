@@ -78,7 +78,7 @@ class Command {
             foreach($migrations as $migration){
                 require_once baseDir() . str_replace("\\", "\\", $migration) . ".php";
                 $migration = new $migration;
-                // $migration->up();
+                $migration->up();
             }
         } catch (\Throwable $th) {
             echo "Error: " . $th->getMessage() . ". \n";
