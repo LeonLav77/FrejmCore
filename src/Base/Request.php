@@ -24,6 +24,9 @@ class Request {
         $this->method = $_SERVER['REQUEST_METHOD'];
         $this->params = $_REQUEST;
         $this->server = $_SERVER;
+    }
 
+    public function get($key){
+        $value = isset($this->params[$key]) ? $this->params[$key] : null;
     }
 }
